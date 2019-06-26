@@ -17,12 +17,14 @@
 .splash-main{
     position: absolute;
     left: 50px;
-    top: 200px;
+    top: 250px;
     padding: 5px;
     h2{
         font-size: 75px;
+        margin-bottom: 30px;
     }
     span{
+        font-size: 25px;
         text-transform: uppercase;
     }
 }
