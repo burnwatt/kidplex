@@ -13,19 +13,20 @@
 
 class User < ApplicationRecord
     attr_reader :password
-    validates :username, :email, :session_token, :password_digest, presence: true
-    validates :username, :email, uniqueness: true
+    validates :email, :session_token, :password_digest, presence: true
+    validates :email, uniqueness: true
     validates :password, length: { minimum: 8 }, allow_nil: true
-    before_validation: ensure_session_token
+    before_validation :ensure_session_token
     
     # Associations for videos/lists
     # 
     # 
     # 
 
-    def self.find_by_credentials(username, password)
-        user = User.find_by(username: username)
-        return nil unless user && user.is_password?(password)
+    def self.find_by_credentials(email, password)
+        user = User.find_by(email: email)
+        return user if user && user.is_password?(password)
+        nil
     end
 
     def password=(password)
@@ -43,18 +44,18 @@ class User < ApplicationRecord
         self.session_token
     end
 
-    private
-
-    def ensure_session_token
-        self.session_token || self.reset_session_token!
-    end
-
     def new_token
         self.session_token = SecureRandom.urlsafe_base64
         while User.find_by( session_token: self.session_token)
             self.session_token = SecureRandom.urlsafe_base64
         end
         self.session_token
+    end
+
+    private
+
+    def ensure_session_token
+        self.session_token || self.reset_session_token!
     end
 
 end
