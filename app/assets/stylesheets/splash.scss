@@ -1,0 +1,28 @@
+.splash-page{
+    background-image: image-url("background.png");
+    height: 900px;
+    color: white;
+}
+.signup-btn{
+    font-size: 12px;
+    border: .5px solid rgb(229, 9, 20);
+    background:rgb(229, 9, 20);
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 75px;
+}
+
+.splash-main{
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    padding: 5px;
+    h2{
+        font-size: 75px;
+    }
+    span{
+        text-transform: uppercase;
+    }
+}

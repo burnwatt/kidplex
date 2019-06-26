@@ -1,0 +1,30 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.logo{
+    width: 150px;
+    height: 50px;
+}
+
+.kidplex-header{
+    display: flex;
+    justify-content: space-between;
+    span{
+        font-size: 16px;
+    }
+    background: transparent;
+}
+
+.login-btn{
+    width: 40px;
+    height: 15px;
+    font-size: 12px;
+    border: .5px solid rgb(229, 9, 20);
+    background:rgb(229, 9, 20);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}

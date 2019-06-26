@@ -8,11 +8,7 @@ import SignupFormContainer from './session/signup_form_container';
 import HeadContainer from './head/head_container';
 
 const App = () => {
-    return <div>
-        <header>
-            <HeadContainer />
-        </header>
-
+    return <div>  
         <SplashContainer />
         <Route path="/login" component={LoginFormContainer} />
         <Route path="/signup" component={SignupFormContainer} />

@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Head = (props) => {
     if (props.user) {
-        return <div>
-            <h1>KidPlex</h1>
+        return <div className='kidplex-header'>
+            <img src={window.logo} alt='KidPlex' className='logo'/>
             <button onClick={props.logout}>Log Out</button>
         </div>
     } else {
-        return <div>
-            <h1>KidPlex</h1>
-            <span>Already a KidPlex Subscriber?
-                <Link to='/login'> Login instead.</Link>
-            </span>
+        return <div className='kidplex-header'>
+            <img src={window.logo} alt='KidPlex' className='logo'/>
+            <Link to='/login' className='login-btn'> Sign In </Link>
         </div>
     }
 }
