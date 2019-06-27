@@ -19,8 +19,8 @@
     width: 350px;
     height: 500px;
     padding: 5px;
-    background: rgba(0, 0, 0, .85);
-    border: .25px rgba(0, 0, 0, .85);
+    background: rgba(0, 0, 0, .75);
+    border: .25px rgba(0, 0, 0, .75);
     border-radius: 3px;
 }
 
@@ -57,10 +57,29 @@
     label{
         font-size: 10px;
         color: rgb(140,140,140);
-        input{
-            width: 100%;
-            font-size: 16px;
+        border-radius: 3px;
+        padding: 0px 15px;
+        margin: 0px 5px;
+        margin-bottom: -5px;
+    }
+    input{
+            width: 87%;
+            color: white;
+            font-size: 12px;
             background: rgb(51, 51, 51);
-        }
+            border-radius: 3px;
+            padding: 5px 15px;
+            margin: 0px 5px;
+    }
+}
+
+.session-link{
+    position: relative;
+    top: 150px;
+    color: rgb(140,140,140);
+    font-size: 16px;
+    a{
+        color: white;
+        text-decoration: none;
     }
 }

@@ -8,8 +8,8 @@ const mapStateToProps = (state, ownProps) => {
     return {
         errors: state.errors.session,
         formType: 'login',
-        link: (<span>New to KidPlex?
-                <Link className='session-link' to='/signup'> Sign up now.</Link>
+        link: (<span className='session-link'>New to KidPlex?
+                    <Link to='/signup'> Sign up now.</Link>
                 </span>)
     }
 };

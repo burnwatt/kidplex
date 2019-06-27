@@ -5,12 +5,14 @@ const Head = (props) => {
     if (props.user) {
         return <div className='kidplex-header'>
             <img src={window.logo} alt='KidPlex' className='logo'/>
-            <button onClick={props.logout}>Log Out</button>
+            <button className='logout' onClick={props.logout}>Log Out</button>
         </div>
     } else {
         return <div className='kidplex-header'>
-            <img src={window.logo} alt='KidPlex' className='logo'/>
-            <Link to='/login' className='login-btn'> Sign In </Link>
+            <Link to='/'>
+                <img src={window.logo} alt='KidPlex' className='logo' />
+            </Link>
+            <Link to='/login' className='signin'> Sign In </Link>
         </div>
     }
 }
