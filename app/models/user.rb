@@ -15,8 +15,8 @@ class User < ApplicationRecord
     attr_reader :password
     validates :email, :session_token, :password_digest, presence: true
     validates :email, uniqueness: true
-    validates :password, length: { minimum: 8 }, allow_nil: true
-    before_validation :ensure_session_token
+    validates :password, length: { minimum: 8, allow_nil: true }
+    after_initialize :ensure_session_token
     
     # Associations for videos/lists
     # 
@@ -55,7 +55,7 @@ class User < ApplicationRecord
     private
 
     def ensure_session_token
-        self.session_token || self.reset_session_token!
+        self.session_token || self.new_token
     end
 
 end

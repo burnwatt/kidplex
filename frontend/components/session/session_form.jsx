@@ -13,7 +13,6 @@ class SessionForm extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
         this.demoLogin = this.demoLogin.bind(this);
         this.update = this.update.bind(this);
-        this.renderErrors = this.renderErrors.bind(this);
     }
 
     handleSubmit(e){
@@ -34,11 +33,11 @@ class SessionForm extends React.Component{
     }
 
     renderErrors(){
-        let errors = this.props.errors;
-        if (errors.session) {
+        let errors = Array.from(this.props.errors);
+        if (errors) {
             return (
                 <ul>
-                    {errors.session.map((error, i) => {
+                    {errors.map((error, i) => {
                         return <li key={`error-${i}`}>
                             {error}
                         </li>
@@ -46,6 +45,10 @@ class SessionForm extends React.Component{
                 </ul>
             );
         }
+    }
+
+    componentWillUnmount(){
+        this.props.clearErrors();
     }
 
     render(){
