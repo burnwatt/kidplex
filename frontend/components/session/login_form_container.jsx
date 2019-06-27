@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps) => {
         errors: state.errors.session,
         formType: 'login',
         link: (<span>New to KidPlex?
-                <Link to='/signup'> Sign up now.</Link>
+                <Link className='session-link' to='/signup'> Sign up now.</Link>
                 </span>)
     }
 };

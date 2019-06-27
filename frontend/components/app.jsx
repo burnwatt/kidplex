@@ -1,17 +1,25 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 
 import SplashContainer from './splash/splash_container';
 import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
-import HeadContainer from './head/head_container';
 
 const App = () => {
     return <div>  
-        <SplashContainer />
-        <Route path="/login" component={LoginFormContainer} />
-        <Route path="/signup" component={SignupFormContainer} />
+        <Switch>
+            <Route exact path="/" component={SplashContainer} />
+            <AuthRoute path="/login" component={LoginFormContainer} />
+            <AuthRoute path="/signup" component={SignupFormContainer} />
+        </Switch>
+        {/* <SplashContainer />
+        <AuthRoute path="/" component={SplashContainer} />
+        <AuthRoute path="/login" component={LoginFormContainer} />
+        <AuthRoute path="/signup" component={SignupFormContainer} /> */}
+
+
     </div>
 }
 

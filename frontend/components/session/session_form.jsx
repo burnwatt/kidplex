@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
+import HeadContainer from '../head/head_container';
+
 class SessionForm extends React.Component{
     constructor(props){
         super(props);
@@ -44,19 +46,35 @@ class SessionForm extends React.Component{
         let link = this.props.link;
 
         return (
-            <div className='session-form'>
-                <h1>{header}</h1>
-                {this.renderErrors()}
-                <form>
-                    <label>Email
-                        <input type="text" value={this.state.email} onChange={this.update('email')}/>
-                    </label>
-                    <label>Password
-                        <input type="password" value={this.state.password} onChange={this.update('password')} />
-                    </label>
-                    <button onClick={this.handleSubmit}>{header}</button>
-                </form>
-                {link}
+            <div className='session-wrapper'>
+                <HeadContainer />
+                <div className='modal'>
+                    <form className='session-form'>
+                        <h1>{header}</h1>
+                        
+                        {this.renderErrors()}
+
+                        <div className='session-input'>
+                            <label>Email
+                                <br/>
+                                <input type="text" value={this.state.email} onChange={this.update('email')} />
+                            </label>
+                        </div>
+                        <br />
+                        <div className='session-input'>
+                            <label>Password
+                                <br />
+                                <input type="password" value={this.state.password} onChange={this.update('password')} />
+                            </label>
+                        </div>
+
+                        <br />
+
+                        <button className='session-btn' onClick={this.handleSubmit}>{header}</button>
+        
+                        {link}
+                    </form>
+                </div>
             </div>
         )
     }
