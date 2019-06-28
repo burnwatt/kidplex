@@ -1,14 +1,13 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: videos
 #
-#  id              :bigint           not null, primary key
-#  username        :string
-#  email           :string           not null
-#  session_token   :string           not null
-#  password_digest :string           not null
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
+#  id         :bigint           not null, primary key
+#  title      :string           not null
+#  synopsis   :string           not null
+#  year       :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
