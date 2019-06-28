@@ -34,6 +34,10 @@
     padding: 2px 5px;
 }
 
+.signin:hover{
+    cursor: pointer;
+}
+
 .logout{
     width: 60px;
     height: 20px;
@@ -48,4 +52,8 @@
     line-height: 10px;
     margin: 8px 0px 0px;
     padding: 2px 5px;
+}
+
+.logout:hover{
+    cursor: pointer;
 }

@@ -15,17 +15,24 @@
     color: white;
     border-radius: 3px;
     text-decoration: none;
-    margin: 5px;
+    margin-top: 50px;
     padding: 5px 75px;
+}
+
+.signup-btn:hover{
+    cursor: pointer;
 }
 
 .splash-main{
     position: absolute;
     left: 50px;
     top: 250px;
+    width: 100%;
+    height: 500px;
     padding: 5px;
     h2{
         font-size: 75px;
+        font-weight: bold;
         margin-bottom: 30px;
     }
     span{

@@ -17,7 +17,8 @@ const Splash = props => {
             <div className="splash-main">
                 <h2>See what's next.</h2>
                 <span>Watch Anywhere. Cancel Anytime.</span>
-                <br/>
+                <br />
+                <br />
                 <Link to="/signup" className='signup-btn'>Join Free For A Month</Link>
             </div>
         </div>

@@ -15,6 +15,7 @@
     // position: absolute;
     // left: 300px;
     // top: 250px;
+    position: relative;
     margin: 30px auto;
     width: 350px;
     height: 500px;
@@ -26,6 +27,7 @@
 
 .session-form{
     margin: 35px;
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     h1{
@@ -34,19 +36,22 @@
         font-weight: bold;
     }
     button{
-        width: 100%;
-        height: 40px;
-        font-size: 12px;
-        border: .5px solid rgb(229, 9, 20);
-        background:rgb(229, 9, 20);
-        color: white;
-        border-radius: 2px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-        line-height: 20px;
-        margin: 8px 0px 0px;
-        padding: 2px 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    border: .5px solid rgb(229, 9, 20);
+    background:rgb(229, 9, 20);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 8px 0px 0px;
+    padding: 2px 5px;
+    }
+    button:hover{
+        cursor: pointer;
     }
 }
 
@@ -74,12 +79,50 @@
 }
 
 .session-link{
-    position: relative;
-    top: 150px;
+    position: absolute;
+    bottom: 0px;
     color: rgb(140,140,140);
     font-size: 16px;
+    margin: 35px;
+
     a{
         color: white;
         text-decoration: none;
     }
+
+    a:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+.errors-list{
+    width: 87%;
+    color: white;
+    font-size: 10px;
+    background: rgb(232, 124, 3);
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+
+.demo{
+    width: 280px;
+    height: 40px;
+    font-size: 12px;
+    border: .5px solid rgb(229, 9, 20);
+    background:rgb(229, 9, 20);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 35px;
+    padding: 2px 5px;
+}
+
+.demo:hover{
+    cursor: pointer;
 }
