@@ -4,6 +4,10 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 
+//TESTING
+import { getVideo, getVideos } from './util/video_api_util';
+//
+
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
     let store;
@@ -21,8 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     //for testing
-    window.getState = store.getState;
-    window.dispatch = store.dispatch;
+        window.getState = store.getState;
+        window.dispatch = store.dispatch;
+        window.getVideos = getVideos;
+        window.getVideo = getVideo;
     //
     
     ReactDOM.render(<Root store={store}/>, root);
