@@ -21,7 +21,10 @@
  //CSS Reset
  @import "./reset.scss";
 
-//Component CSS
+ //Video-React CSS
+@import "video-react/styles/scss/video-react";
+
+ //Component CSS
  @import "./splash.scss";
  @import './head.scss';
 

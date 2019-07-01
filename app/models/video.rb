@@ -12,6 +12,6 @@
 
 class Video < ApplicationRecord
     validates :title, :synopsis, :year, presence: true
-
+    has_one_attached :movie
     #Associations for genres/lists
 end
