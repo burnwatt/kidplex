@@ -12,6 +12,18 @@
 
 class Video < ApplicationRecord
     validates :title, :synopsis, :year, presence: true
-    has_one_attached :movie
+    
     #Associations for genres/lists
+    has_many :video_genres,
+        foreign_key: :video_id,
+        class_name: :VideoGenre
+
+    has_many :genres,
+        through: :video_genres,
+        source: :genre
+
+    #ActiveStorage
+    has_one_attached :movie
+    has_one_attached :trailer
+    has_one_attached :poster
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_28_233855) do
+ActiveRecord::Schema.define(version: 2019_07_01_200647) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,13 @@ ActiveRecord::Schema.define(version: 2019_06_28_233855) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "genres", force: :cascade do |t|
+    t.string "genre", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["genre"], name: "index_genres_on_genre"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email", null: false
@@ -46,6 +53,15 @@ ActiveRecord::Schema.define(version: 2019_06_28_233855) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
+  end
+
+  create_table "video_genres", force: :cascade do |t|
+    t.integer "video_id", null: false
+    t.integer "genre_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["genre_id"], name: "index_video_genres_on_genre_id"
+    t.index ["video_id"], name: "index_video_genres_on_video_id"
   end
 
   create_table "videos", force: :cascade do |t|
