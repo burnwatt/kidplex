@@ -9,11 +9,11 @@ class HeroMovie extends React.Component{
         return (
             <div>
                 <video
-                    poster='/assets/poster.jpg'
-                    src="https://kidplex-dev.s3.us-east-2.amazonaws.com/toy_story.mp4"
+                    poster='https://kidplex-dev.s3.us-east-2.amazonaws.com/video-data/superheroes/posters/spiderman.jpg'
+                    src="https://kidplex-dev.s3.us-east-2.amazonaws.com/video-data/superheroes/movies/spiderman.mp4"
                     controls >
                 </video>
-                {/* Title: {this.props.movie.title} */}
+                {/* Title: {this.props.video.title} */}
             </div>
         )
     }   

@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const Head = (props) => {
     if (props.user) {
         return <div className='kidplex-header'>
-            <img src={window.logo} alt='KidPlex' className='logo'/>
+            <Link to='/'>
+                <img src={window.logo} alt='KidPlex' className='logo' />
+            </Link>
             <button className='logout' onClick={props.logout}>Log Out</button>
         </div>
     } else {
