@@ -6,10 +6,11 @@ const Video = props => {
     return(
         <li className='video-item'>
             <Link to={'/browse/' + props.video.id}>
-                Title: {props.video.title} <br/>
+                {/* Title: {props.video.title} <br/> */}
+                <img src={props.video.poster_url} alt={props.video.title}/>
             </Link>
-            Year:  {props.video.year} <br />
-            Synopsis: {props.video.synopsis} <br />
+            {/* Year:  {props.video.year} <br />
+            Synopsis: {props.video.synopsis} <br /> */}
         </li>
     );
 }
