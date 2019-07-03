@@ -8,7 +8,7 @@ class Genre extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className='genres'>
                 <h1>{this.props.genre.genre}</h1>
                 <ul className='genreList'>
                     {this.props.videos.map( vid => <Video video={vid} key={vid.id}/>)}

@@ -11,16 +11,13 @@ class HeroMovie extends React.Component{
             return null
         }
         return (
-            <div>
-                {/* <video controls autoPlay poster={hero.poster_url} muted>
-                    <source src={hero.trailer_url} />
-                </video> */}
+            <div className='hero-container'>
                 <video
-                    width='100%'
+                    className='hero-player'
                     poster={hero.poster_url}
-                    src={hero.trailer_url}
+                    src={hero.movie_url}
                     autoPlay
-                    muted >
+                    muted>
                 </video>
             </div>
         )

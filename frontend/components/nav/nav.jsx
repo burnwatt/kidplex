@@ -25,8 +25,8 @@ class Nav extends React.Component{
                 <div className='nav-secondary'>
                     <i className="fas fa-search"></i>
                     <a href="https://dvd.netflix.com/">DVD</a>
-                    <i class="fas fa-bell"></i>
-                    <i class="far fa-smile"></i>
+                    <i className="fas fa-bell"></i>
+                    <i className="far fa-smile"></i>
                 </div>
             </nav>
         )
