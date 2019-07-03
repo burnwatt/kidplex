@@ -8,14 +8,14 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import error404 from './error404';
 import VideoIndexContainer from './browse/video_index_container';
-import VideoShow from './browse/video_show';
+import WatchContainer from './browse/video_show_container';
 
 const App = () => {
     return <div>  
         <Switch>
             <Route exact path="/" component={SplashContainer} />
             <ProtectedRoute exact path="/browse" component={VideoIndexContainer} />
-            <ProtectedRoute path="/browse/:id" component={VideoShow} />
+            <ProtectedRoute path="/watch/:id" component={WatchContainer} />
             <AuthRoute path="/login" component={LoginFormContainer} />
             <AuthRoute path="/signup" component={SignupFormContainer} />
             <Route path="/" component={error404} />
