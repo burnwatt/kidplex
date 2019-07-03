@@ -6,14 +6,22 @@ class HeroMovie extends React.Component{
     }
 
     render(){
+        const hero = this.props.videos[14]
+        if(!hero){
+            return null
+        }
         return (
             <div>
+                {/* <video controls autoPlay poster={hero.poster_url} muted>
+                    <source src={hero.trailer_url} />
+                </video> */}
                 <video
-                    poster='https://kidplex-dev.s3.us-east-2.amazonaws.com/video-data/superheroes/posters/spiderman.jpg'
-                    src="https://kidplex-dev.s3.us-east-2.amazonaws.com/video-data/superheroes/movies/spiderman.mp4"
-                    controls >
+                    width='100%'
+                    poster={hero.poster_url}
+                    src={hero.trailer_url}
+                    autoPlay
+                    muted >
                 </video>
-                {/* Title: {this.props.video.title} */}
             </div>
         )
     }   
