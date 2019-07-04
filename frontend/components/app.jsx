@@ -13,7 +13,7 @@ import WatchContainer from './browse/video_show_container';
 const App = () => {
     return <div>  
         <Switch>
-            <Route exact path="/" component={SplashContainer} />
+            <AuthRoute exact path="/" component={SplashContainer} />
             <ProtectedRoute exact path="/browse" component={VideoIndexContainer} />
             <ProtectedRoute path="/watch/:id" component={WatchContainer} />
             <AuthRoute path="/login" component={LoginFormContainer} />
