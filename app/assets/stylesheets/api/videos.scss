@@ -7,5 +7,37 @@
         width: 300px;
         padding: 2.5px;
     }
-   
+}
+.watch-player{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+.back-button{
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    width: 1.4vw;
+    height: 1.4vw;
+    background: rgba(13, 13, 13, .25);
+    padding: .3vw;
+    border-radius: 50%;
+    border: .1vw solid rgba(255, 255, 255, 0.5);
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.797);
+    }
+}
+
+.back-button:hover{
+    background-color: rgba(255, 255, 255, 0.797);
+    i{
+        color: rgba(13, 13, 13, .90);
+    }
 }

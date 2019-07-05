@@ -26,7 +26,7 @@ class Nav extends React.Component{
                     <i className="fas fa-search"></i>
                     <a href="https://dvd.netflix.com/">DVD</a>
                     <i className="fas fa-bell"></i>
-                    <i className="far fa-smile"></i>
+                    <i className="far fa-smile" onClick={this.props.logout}></i>
                 </div>
             </nav>
         )

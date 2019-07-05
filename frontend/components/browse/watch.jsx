@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class Watch extends React.Component{
     constructor(props){
@@ -14,10 +15,15 @@ class Watch extends React.Component{
             return <div></div>;
         }
         return(
-            <div>
-                <video controls autoPlay>
+            <div className='watch-wrapper'>
+                <video className='watch-player' controls autoPlay>
                     <source src={this.props.video.movie_url}/>
                 </video>
+                <div className='back-button'>
+                    <Link to='/browse'>
+                        <i className="fas fa-arrow-left"></i>
+                    </Link>
+                </div>
             </div>
         );
     }
