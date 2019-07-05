@@ -28,7 +28,9 @@ class HeroMovie extends React.Component{
             hero.pause();
             this.setState({muted: true});
         } else if (window.scrollY === 0) {
+            hero.muted = false;
             hero.play();
+            this.setState({ muted: false });
         }
     }
 
