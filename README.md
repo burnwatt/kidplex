@@ -7,14 +7,11 @@ Welcome to KidPlex! KidPlex is a single page clone of Netflix, the world's large
 ### Splash Component & Login/Signup Components
 Our end users first arrive to the splash component, which allows the users to sign up or sign in:
 
-![Splash Page](https://raw.githubusercontent.com/burnwatt/kidplex/master/splash.png)
 Splash Page
+![Splash Page](https://raw.githubusercontent.com/burnwatt/kidplex/master/splash.png)
 
-![Sign Up](https://raw.githubusercontent.com/burnwatt/kidplex/master/signup.png)
-Sign Up
-
-![Sign In](https://raw.githubusercontent.com/burnwatt/kidplex/master/signin.png)
 Sign In
+![Sign In](https://raw.githubusercontent.com/burnwatt/kidplex/master/signin.png)
 
 ### Browse
 The Browse (or video show) component serves as the focal point of the application. From this component, the user can access the entire library of videos categorized by genre. The user is first presented with a featured "hero" video, typically showcasing a new release or trending video on the application:
@@ -22,16 +19,11 @@ The Browse (or video show) component serves as the focal point of the applicatio
 ![Browse Component](https://raw.githubusercontent.com/burnwatt/kidplex/master/browse.png)
 
 ### Watch
-
+Our video show page, the Watch component, is the core of the application. The application makes a single request to our database to pull the corresponding video url for the video selected. Each URL points to a corresponding asset hosted on AWS.
 ![Watch Component](https://raw.githubusercontent.com/burnwatt/kidplex/master/watch.png)
 
 ### Genres
-
-### Search
-
-### WatchList
-
-### Profiles
+User experience is crucial to a video application. For this reason, consideration must be made to ensure that our users can easily locate the best titles suited for them. Netflix (and now KidPlex) uses a simple carousel of selected titles based on both traditional movie genres as well as genres tailored to 
 
 ## Technologies used
  * Javascript
