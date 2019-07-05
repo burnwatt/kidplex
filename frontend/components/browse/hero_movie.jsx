@@ -27,7 +27,7 @@ class HeroMovie extends React.Component{
             hero.muted = true;
             hero.pause();
             this.setState({muted: true});
-        } else {
+        } else if (window.scrollY === 0) {
             hero.play();
         }
     }
@@ -71,8 +71,10 @@ class HeroMovie extends React.Component{
                 <video
                     id='hero'
                     className='hero-player'
-                    poster={hero.poster_url}
-                    src={hero.trailer_url}
+                    // poster={hero.poster_url}
+                    // src={hero.trailer_url}
+                    src='https://kidplex-dev.s3.us-east-2.amazonaws.com/video-data/superheroes/trailers/spiderman.mp4'
+                    poster='https://kidplex-dev.s3.us-east-2.amazonaws.com/video-data/superheroes/posters/spiderman.jpg'
                     autoPlay
                     muted
                 >
