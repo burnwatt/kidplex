@@ -23,7 +23,7 @@ Our video show page, the Watch component, is the core of the application. The ap
 
 ### Genres
 User experience is crucial to a video application. For this reason, consideration must be made to ensure that our users can easily locate the best titles suited for them. Netflix (and now KidPlex) uses a simple carousel of selected titles based on both traditional movie genres as well as genres tailored to user demographics.
-![Genre Component](https://raw.githubusercontent.com/burnwatt/kidplex/master/genre.png)
+![Genre Component](https://raw.githubusercontent.com/burnwatt/kidplex/master/genres.png)
 
 ## Technologies used
  * Javascript
