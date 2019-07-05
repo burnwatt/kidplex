@@ -1,24 +1,31 @@
-# README
+# KidPlex
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Wekcome to KidPlex! KidPlex is a single page clone of Netflix, the world's largest video streaming platform. With KidPlex, users can create accounts, log in, browse our selection of kid friendly video titles broken down by genre, and view their favorite videos from anywhere with a web connection. In this README, we provide an overview of the features available in KidPlex along with information regarding the technologies used to implement the app.
 
-Things you may want to cover:
+## Overview
 
-* Ruby version
+## Technologies used
+ 1.	Javascript
+ 2.	Ruby on Rails
+ 3.	PostgreSQL
+ 4.	HTML
+ 5.	SCSS/CSS
+ 6. GIMP (for image manipulation)
+ 7. HandBrake (for video manipulation)
 
-* System dependencies
+## Libraries used:
 
-* Configuration
+* React.js (incl. react-router-dom)
+* Redux (incl. react-redux, redux-thunk middleware)
+* jQuery for Ajax calls to my API
+* Bcrypt for user authorization
+* AWS S3 to store video assets including poster images, trailers, and video files
 
-* Database creation
+## Features:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Sign up & log in with email address & password
+* Browse video titles by genre
+* View titles
+* Add/Remove titles to user watch list^
+* Title search^
+* User profiles^
