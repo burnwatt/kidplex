@@ -5,11 +5,25 @@ Welcome to KidPlex! KidPlex is a single page clone of Netflix, the world's large
 ## Overview
 
 ### Splash Component & Login/Signup Components
-Our end users first arrive to the splash page component, which allows the users to sign up or sign in:
+Our end users first arrive to the splash component, which allows the users to sign up or sign in:
+
+![Splash Page](https://raw.githubusercontent.com/burnwatt/kidplex/master/splash.png)
+Splash Page
+
+![Sign Up](https://raw.githubusercontent.com/burnwatt/kidplex/master/signup.png)
+Sign Up
+
+![Sign In](https://raw.githubusercontent.com/burnwatt/kidplex/master/signin.png)
+Sign In
 
 ### Browse
+The Browse (or video show) component serves as the focal point of the application. From this component, the user can access the entire library of videos categorized by genre. The user is first presented with a featured "hero" video, typically showcasing a new release or trending video on the application:
+
+![Browse Component](https://raw.githubusercontent.com/burnwatt/kidplex/master/browse.png)
 
 ### Watch
+
+![Watch Component](https://raw.githubusercontent.com/burnwatt/kidplex/master/watch.png)
 
 ### Genres
 
@@ -20,11 +34,11 @@ Our end users first arrive to the splash page component, which allows the users 
 ### Profiles
 
 ## Technologies used
- *	Javascript
- *	Ruby on Rails
- *	PostgreSQL
- *	HTML
- *	SCSS/CSS
+ * Javascript
+ * Ruby on Rails
+ * PostgreSQL
+ * HTML
+ * SCSS/CSS
  * GIMP (for image manipulation)
  * HandBrake (for video manipulation)
 
