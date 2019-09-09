@@ -1,12 +1,14 @@
 .nav-main{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: transparent;
     padding:  0px 20px;
     margin-top: 5px;
 }
 .nav-primary{
     display: flex;
+    align-items: center;
     a{
         font-size: .85vw;
         font-weight: 300;

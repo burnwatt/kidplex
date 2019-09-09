@@ -82,7 +82,7 @@ class HeroMovie extends React.Component{
                 >
                 </video>
                 <div className='hero-info'>
-                    <img id='hero-title'src={spidey} alt={hero.title}/>
+                    <img id='hero-title'src="https://kidplex-dev.s3.us-east-2.amazonaws.com/spidey.png" alt={hero.title}/>
                     <Link className='hero-buttons' to={'/watch/' + hero.id}>
                         <i className="fas fa-play"></i>
                         <span>Play</span>
