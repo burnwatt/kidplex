@@ -4,23 +4,21 @@ Welcome to KidPlex! KidPlex is a single page clone of Netflix, the world's large
 
 [Live Demo](https://kidplex.herokuapp.com/
 
-## Overview
 ## Technologies used
- * Javascript
- * Ruby on Rails
- * PostgreSQL
- * HTML
- * SCSS/CSS
- * GIMP (for image manipulation)
- * HandBrake (for video manipulation)
-
-## Libraries used:
-
+* Javascript
+* Ruby on Rails
+* PostgreSQL
+* HTML
+* SCSS/CSS
+* GIMP (for image manipulation)
+* HandBrake (for video manipulation)
 * React.js (incl. react-router-dom)
 * Redux (incl. react-redux, redux-thunk middleware)
 * jQuery for Ajax calls to my API
 * Bcrypt for user authorization
 * AWS S3 to store video assets including poster images, trailers, and video files
+
+## Overview
 
 ### Splash Component & Login/Signup Components
 Our end users first arrive to the splash component, which allows the users to sign up or sign in:
