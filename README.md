@@ -2,7 +2,7 @@
 
 Welcome to KidPlex! KidPlex is a single page clone of Netflix, the world's largest video streaming platform. With KidPlex, users can create accounts, log in, browse our selection of kid friendly video titles broken down by genre, and view their favorite videos from anywhere with a web connection. In this README, we provide an overview of the features available in KidPlex along with information regarding the technologies used to implement the app.
 
-[Live Demo](https://kidplex.herokuapp.com/
+[Live Demo](https://kidplex.herokuapp.com/)
 
 ## Technologies used
 * Javascript
